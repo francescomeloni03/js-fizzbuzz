@@ -12,18 +12,16 @@ for (let contatore = 0; contatore < 100; contatore++) {
 
 
     
-   
+    if (numero % 3 == 0 && numero % 5== 0){
+        contentitore.innerHTML += `<div class="box-fizz-buzz">fizzbuzz</div>`;   //Ora funziona: ho cambiato ordine
+    }
 
-    if (numero % 3 == 0){
+    else if (numero % 3 == 0){
         contentitore.innerHTML += `<div class="box-fizz">fizz</div>`;
     }
 
     else if (numero % 5 == 0){
         contentitore.innerHTML += `<div class="box-buzz">buzz</div>`;
-    }
-
-    else if (numero % 3 == 0 && numero % 5== 0){
-        contentitore.innerHTML += `<div class="box-fizz-buzz">fizzbuzz</div>`;  //multipli sia di 3 che di 5 non mi esce, domani vedo //
     }
 
     else {
